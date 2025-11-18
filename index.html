@@ -1,18 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flames App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rah-e-Aavard (Pvt.) Ltd. | Study Abroad & Immigration Consultants in Rawalpindi</title>
+  <meta name="description" content="Rah-e-Aavard helps students and professionals secure admissions, visas, and immigration for Canada, UK, Australia, Germany, Turkey, and Malaysia. Free assessment and expert guidance.">
+  <meta property="og:title" content="Rah-e-Aavard (Pvt.) Ltd. – Study Abroad & Immigration"/>
+  <meta property="og:description" content="Turn your dream of studying & living abroad into reality. 5000+ visas granted, 15+ years experience."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="/assets/images/hero.webp"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav">
+      <a href="/" class="logo">
+        <img src="/flame-icon.svg" alt="Rah-e-Aavard logo">
+        <span>Rah‑e‑Aavard</span>
+      </a>
+      <nav class="nav-links desktop-only">
+        <a href="/" class="active">Home</a>
+        <a href="/about.html">About</a>
+        <a href="#services">Services</a>
+        <a href="/countries.html">Countries</a>
+        <a href="/success-stories.html">Success Stories</a>
+        <a href="/ielts.html">IELTS</a>
+        <a href="/contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+      <button id="open-drawer" class="mobile-only mobile-toggle" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div class="drawer" role="dialog" aria-modal="true">
+      <div class="drawer-panel">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px">
+          <div class="logo"><img src="/flame-icon.svg" alt="Logo"><span>Rah‑e‑Aavard</span></div>
+          <button id="close-drawer" class="mobile-toggle" aria-label="Close menu">✕</button>
+        </div>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="#services">Services</a>
+        <a href="/countries.html">Countries</a>
+        <a href="/success-stories.html">Success Stories</a>
+        <a href="/ielts.html">IELTS</a>
+        <a href="/contact.html" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-media" style="background-image:url('/assets/images/hero.webp')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge">Trusted by 5,000+ families</span>
+      <h1 class="h1">Turn Your Dream of Studying & Living Abroad into Reality</h1>
+      <p class="lead">Expert admission and visa assistance for Canada, UK, Australia, Germany, Turkey and Malaysia. Personalised guidance with transparent processes.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" data-wa="Hi! I’d like a free consultation.">Free Consultation</a>
+        <a class="btn btn-outline" href="#assessment">Check Eligibility</a>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><div class="num counter" data-to="5000">0</div><div class="muted">Visas Granted</div></div>
+        <div class="stat reveal"><div class="num counter" data-to="3000">0</div><div class="muted">Students Placed</div></div>
+        <div class="stat reveal"><div class="num counter" data-to="15">0</div><div class="muted">Years Experience</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="h2 center">Our Services</h2>
+      <p class="lead center">End-to-end support from course selection to visa stamping.</p>
+      <div class="grid services mt-6">
+        <div class="card service-card reveal">
+          <div class="card-body">
+            <div class="icon"><img alt="book" src="/assets/icons/check.svg"></div>
+            <h3 class="h3">Study Abroad</h3>
+            <p class="muted">Admissions to top universities with scholarship guidance.</p>
+            <span class="tag">Popular</span>
+          </div>
+        </div>
+        <div class="card service-card reveal"><div class="card-body"><div class="icon"><img alt="globe" src="/assets/icons/check.svg"></div><h3 class="h3">Immigration</h3><p class="muted">PR pathways, express entry and PNP advisory.</p></div></div>
+        <div class="card service-card reveal"><div class="card-body"><div class="icon"><img alt="briefcase" src="/assets/icons/check.svg"></div><h3 class="h3">Work Permit</h3><p class="muted">LMIA, post‑study work routes and employer linkages.</p></div></div>
+        <div class="card service-card reveal"><div class="card-body"><div class="icon"><img alt="plane" src="/assets/icons/check.svg"></div><h3 class="h3">Visit Visa</h3><p class="muted">Tourism and family visit applications with strong SOPs.</p></div></div>
+        <div class="card service-card reveal"><div class="card-body"><div class="icon"><img alt="family" src="/assets/icons/check.svg"></div><h3 class="h3">Family Sponsorship</h3><p class="muted">Spousal, parents and dependent visas.</p></div></div>
+        <div class="card service-card reveal"><div class="card-body"><div class="icon"><img alt="IELTS" src="/assets/icons/check.svg"></div><h3 class="h3">IELTS Preparation</h3><p class="muted">Certified trainers, weekend batches and mock tests.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="h2 center">Why Choose Rah‑e‑Aavard</h2>
+      <div class="grid row row-3 mt-6">
+        <div class="icon-box reveal"><div class="i">✓</div><div><h3 class="h3">Licensed & Registered</h3><p class="muted">Govt. of Pakistan License: OP&HRD‑XXXX • ICEF • British Council</p></div></div>
+        <div class="icon-box reveal"><div class="i">✓</div><div><h3 class="h3">Transparent Process</h3><p class="muted">Clear timelines, document checklists and honest feedback.</p></div></div>
+        <div class="icon-box reveal"><div class="i">✓</div><div><h3 class="h3">High Success Rate</h3><p class="muted">5000+ visa approvals with strong case building.</p></div></div>
+        <div class="icon-box reveal"><div class="i">✓</div><div><h3 class="h3">Scholarship Guidance</h3><p class="muted">Merit and need‑based opportunities tailored to your profile.</p></div></div>
+        <div class="icon-box reveal"><div class="i">✓</div><div><h3 class="h3">Test Prep</h3><p class="muted">IELTS, PTE and Duolingo with certified instructors.</p></div></div>
+        <div class="icon-box reveal"><div class="i">✓</div><div><h3 class="h3">Post‑Landing Support</h3><p class="muted">Airport pickup, housing guidance and orientation.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2 center">Popular Destinations</h2>
+      <div class="scroller mt-6">
+        <a class="card dest-card reveal" href="/canada.html"><img src="/assets/images/canada.webp" alt="Canada skyline"><div class="card-body"><div style="display:flex;align-items:center;gap:8px"><img class="flag" src="/assets/images/canada.webp" alt="Canada flag"><b>Canada</b></div><p class="muted mt-2">High PR prospects • Co‑op programs • PSW up to 3 years</p></div></a>
+        <a class="card dest-card reveal" href="/australia.html"><img src="/assets/images/australia.webp" alt="Australia beach"><div class="card-body"><div style="display:flex;align-items:center;gap:8px"><img class="flag" src="/assets/images/australia.webp" alt="Australia flag"><b>Australia</b></div><p class="muted mt-2">World‑class universities • Ample part‑time work</p></div></a>
+        <a class="card dest-card reveal" href="/uk.html"><img src="/assets/images/uk.webp" alt="UK London"><div class="card-body"><div style="display:flex;align-items:center;gap:8px"><img class="flag" src="/assets/images/uk.webp" alt="UK flag"><b>United Kingdom</b></div><p class="muted mt-2">Graduate Route • 1‑year master’s • Global exposure</p></div></a>
+        <div class="card dest-card reveal"><img src="/assets/images/germany.webp" alt="Germany"><div class="card-body"><div style="display:flex;align-items:center;gap:8px"><img class="flag" src="/assets/images/germany.webp" alt="Germany flag"><b>Germany</b></div><p class="muted mt-2">Low tuition • Strong engineering programs</p></div></div>
+        <div class="card dest-card reveal"><img src="/assets/images/turkey.webp" alt="Turkey"><div class="card-body"><div style="display:flex;align-items:center;gap:8px"><img class="flag" src="/assets/images/turkey.webp" alt="Turkey flag"><b>Turkey</b></div><p class="muted mt-2">Affordable quality education • Rich culture</p></div></div>
+        <div class="card dest-card reveal"><img src="/assets/images/malaysia.webp" alt="Malaysia"><div class="card-body"><div style="display:flex;align-items:center;gap:8px"><img class="flag" src="/assets/images/malaysia.webp" alt="Malaysia flag"><b>Malaysia</b></div><p class="muted mt-2">Budget‑friendly • English‑taught programs</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2 center">Success Stories</h2>
+      <div class="slider mt-6">
+        <div class="slides">
+          <div class="slide reveal"><img src="/assets/images/canada.webp" alt="Student approved for Canada study visa"><div class="card-body"><b>Ali Raza</b> • Canada • Study Visa</div></div>
+          <div class="slide reveal"><img src="/assets/images/uk.webp" alt="Student approved for UK student visa"><div class="card-body"><b>Hira Khan</b> • UK • Master’s</div></div>
+          <div class="slide reveal"><img src="/assets/images/australia.webp" alt="Student approved for Australia visa"><div class="card-body"><b>Usman Ahmed</b> • Australia • Diploma</div></div>
+        </div>
+        <div class="slider-controls"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+      </div>
+      <div class="center mt-6"><a href="/success-stories.html" class="btn btn-outline">View Gallery</a></div>
+    </div>
+  </section>
+
+  <!-- Licenses & badges -->
+  <section class="section-sm">
+    <div class="container center">
+      <span class="badge">Govt. License • ICEF • British Council</span>
+      <div class="badges mt-4">
+        <img src="/assets/icons/check.svg" alt="Govt of Pakistan license">
+        <img src="/assets/icons/check.svg" alt="ICEF">
+        <img src="/assets/icons/check.svg" alt="British Council">
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Assessment Form -->
+  <section id="assessment" class="section">
+    <div class="container">
+      <div class="card reveal">
+        <div class="card-body">
+          <h2 class="h2">Free Assessment</h2>
+          <p class="muted">Fill in the details — we’ll review your profile and contact you on WhatsApp.</p>
+          <form id="assessment-form" class="form mt-4">
+            <div class="row row-2">
+              <input class="input" id="name" name="name" placeholder="Full Name" required>
+              <input class="input" id="phone" name="phone" placeholder="WhatsApp Number" required>
+            </div>
+            <div class="row row-2">
+              <select class="input select" id="country" name="country" required>
+                <option value="" disabled selected>Country Interested</option>
+                <option>Canada</option><option>Australia</option><option>United Kingdom</option><option>Germany</option><option>Turkey</option><option>Malaysia</option>
+              </select>
+              <input class="input" id="email" name="email" placeholder="Email (optional)" type="email">
+            </div>
+            <textarea class="input" id="message" name="message" rows="3" placeholder="Brief about your profile"></textarea>
+            <button class="btn btn-primary" type="submit">Send via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews & Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="row row-2">
+        <div class="card reveal">
+          <div class="card-body">
+            <h2 class="h2">What Students Say</h2>
+            <div class="mt-3"><iframe title="Google Reviews" src="https://widgets.sociablekit.com/google-reviews/iframe/16138" style="width:100%;height:360px;border:0;border-radius:12px"></iframe></div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-body">
+            <h2 class="h2">Visit Our Office</h2>
+            <p class="muted">Office #12, Fifth Road, Satellite Town, Rawalpindi, Pakistan</p>
+            <p class="muted">Phone: 0300‑1234567, 0333‑1234567, 051‑1234567</p>
+            <p class="muted">Email: info@raheaavard.com</p>
+            <div class="mt-3"><iframe title="Google Maps" src="https://www.google.com/maps?q=Satellite+Town+Rawalpindi&output=embed" style="width:100%;height:260px;border:0;border-radius:12px"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer section">
+    <div class="container">
+      <div class="row row-4">
+        <div>
+          <div class="brand">Rah‑e‑Aavard (Pvt.) Ltd.</div>
+          <p class="small mt-3">Leading study abroad and immigration consultancy in Rawalpindi. We turn your global dreams into reality.</p>
+        </div>
+        <div>
+          <div class="col-title">Quick Links</div>
+          <p class="small"><a href="/about.html">About</a><br><a href="/countries.html">Countries</a><br><a href="/success-stories.html">Success Stories</a><br><a href="/ielts.html">IELTS</a><br><a href="/contact.html">Contact</a></p>
+        </div>
+        <div>
+          <div class="col-title">Services</div>
+          <p class="small">Study Abroad<br>Immigration<br>Work Permit<br>Visit Visa<br>Family Sponsorship<br>IELTS Preparation</p>
+        </div>
+        <div>
+          <div class="col-title">Contact</div>
+          <p class="small">Office #12, Fifth Road, Satellite Town, Rawalpindi<br>Phone: 0300‑1234567<br>Email: info@raheaavard.com</p>
+        </div>
+      </div>
+      <p class="small mt-6">© 2025 Rah‑e‑Aavard (Pvt.) Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp-float" aria-label="Chat on WhatsApp" href="https://wa.me/923001234567" target="_blank" rel="noopener"><img src="/assets/icons/whatsapp.svg" alt="WhatsApp"> Chat</a>
+
+  <script src="/js/main.js"></script>
+</body>
 </html>
